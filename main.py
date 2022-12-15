@@ -30,7 +30,7 @@ inversion = ustcurve_plot
 inversion['spreads'] = ustcurve_plot['10y'] - ustcurve_plot['3m']
 
 overlay = pd.DataFrame({'y': [0.0]})
-
+print(inversion)
 last_day =  inversion.iloc[-1]
 spread_val = last_day['10y'] - last_day['3m']
 
